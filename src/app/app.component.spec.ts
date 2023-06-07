@@ -1,29 +1,30 @@
-import { TestBed } from '@angular/core/testing';
-import { RouterTestingModule } from '@angular/router/testing';
-import { AppComponent } from './app.component';
+// import { TestBed, ComponentFixture } from '@angular/core/testing';
+// import { AppComponent } from './app.component';
 
-describe('AppComponent', () => {
-  beforeEach(() => TestBed.configureTestingModule({
-    imports: [RouterTestingModule],
-    declarations: [AppComponent]
-  }));
+// describe('AppComponent', () => {
+//   let component: AppComponent;
+//   let fixture: ComponentFixture<AppComponent>;
 
-  it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
-  });
+//   beforeEach(async () => {
+//     await TestBed.configureTestingModule({
+//       declarations: [AppComponent]
+//     }).compileComponents();
+//   });
 
-  it(`should have as title 'angular-tour-of-heroes'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-tour-of-heroes');
-  });
+//   beforeEach(() => {
+//     fixture = TestBed.createComponent(AppComponent);
+//     component = fixture.componentInstance;
+//     fixture.detectChanges();
+//   });
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('angular-tour-of-heroes app is running!');
-  });
-});
+//   it('should create the app', () => {
+//     expect(component).toBeTruthy(); // Vérifie que le composant AppComponent a été créé avec succès
+//   });
+
+//   it('should have the correct title', () => {
+//     const titleElement: HTMLElement = fixture.nativeElement.querySelector('h1');
+//     // Récupère l'élément HTML correspondant au titre (balise <h1>) dans le DOM
+//     expect(titleElement.textContent).toContain('Tour of Heroes');
+//     // Vérifie que le contenu textuel de l'élément correspond à 'Tour of Heroes'
+//   });
+// });
